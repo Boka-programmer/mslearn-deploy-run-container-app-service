@@ -31,8 +31,8 @@ name: 'Build and Deploy to Cloud Run'
 
 on:
   push:
-    branches:
-      - '"master"'
+    tags:
+      - '*'
 
 env:
   PROJECT_ID: 'my-project' # TODO: update to your Google Cloud project ID
